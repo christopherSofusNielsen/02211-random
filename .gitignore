@@ -1,1 +1,4 @@
 target
+generated
+.bloop
+test_run_dir

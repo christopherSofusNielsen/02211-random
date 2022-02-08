@@ -17,10 +17,12 @@ class Add extends Module {
     val c = Output(UInt(8.W))
   })
 
-  val reg = RegInit(0.U(8.W))
-  reg := io.a + io.b
+  // val reg = RegInit(0.U(8.W))
+  // reg := io.a + io.b
 
-  io.c := reg
+  // io.c := reg
+
+  io.c:=io.a + io.b
 }
 
 object AddMain extends App {
